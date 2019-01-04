@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include 'layout.html' %}
+
+</head>
+
+<body>
+    <div class="bg-success">
+        <div class="row">
+            {% for i in range(5) %}
+            <br> {% endfor %}
+        </div>
+        <div class="jumbotron text-center">
+            <img src="https://img.icons8.com/color/96/000000/documentary.png">
+            <h1>YMovie</h1>
+            <p class="lead">A Movie Recommendation and Review Analysis System</p>
+            <hr class="my-4">
+            <a href="/getRecommendation" class="btn btn-primary btn-lg">Get Recommendation</a>
+            <a href="/sentimentAnalysis" class="btn btn-default btn-lg">Sentiment Analysis</a>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-primary" style="width: 20%"></div>
+            <div class="progress-bar progress-bar-info" style="width: 20%"></div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%"></div>
+            <div class="progress-bar progress-bar-danger" style="width: 20%"></div>
+            <div class="progress-bar progress-bar-primary" style="width: 20%"></div>
+        </div>
+    </div>
+</body>
+
+</html>

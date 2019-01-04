@@ -1,0 +1,21 @@
+<div class="list-group">
+    <li class="list-group-item">
+        <strong>Movies Recommended For You</strong>
+    </li>
+    {% for item in movie_predicted %}
+    <li class="list-group-item list-group-item-light">
+        <span class="text-warning">
+            <strong>#</strong>
+        </span>
+        <span class="text-warning">
+            <strong>{{ item[1] }}</strong>
+        </span>
+        <span class="badge">{{ item[0] }}</span>
+        <p>
+            {% for genre in movie_genre_dict[item[1]] %}
+            <span class="label label-warning">{{ genre }}</span>
+            {% endfor %}
+        </p>
+    </li>
+    {% endfor %}
+</div>
