@@ -1,4 +1,4 @@
-__author__ = "Azharuddin Ruhit"
+__author__ = "Yaswanth Sai Palaghat"
 
 import nltk
 import sklearn
